@@ -75,8 +75,6 @@
 }
 
 - (void)dealloc {
-    [super dealloc];
-    
     [_profilePicture release];
     [_connectedStateLabel release];
     [_me release];
@@ -84,6 +82,8 @@
     [_permissions release];
     [_backgroundImageView release];
     [_bundle release];
+    
+    [super dealloc];
 }
 
 #pragma mark View lifecycle

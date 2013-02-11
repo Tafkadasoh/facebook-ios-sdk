@@ -66,14 +66,14 @@
 }
 
 - (void)dealloc {
-    [super dealloc];
-    
     [_cancelButton release];
     [_doneButton release];
     [_toolbar release];
     [_canvasView release];
     [_titleLabel release];
     [_handler release];
+    
+    [super dealloc];
 }
 
 #pragma mark View lifecycle
